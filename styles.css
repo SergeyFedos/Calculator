@@ -21,6 +21,8 @@ body {
   background-color: lightgray;
   border-style: outset;
   border-width: 5px;
+  min-width: 400px;
+  min-height: 50vh;
 
 }
 
@@ -37,7 +39,7 @@ body {
 }
 
 button {
-  width: 70x;
+  width: 70px;
   height: 70px;
   border-radius: 10px;
   border: none;
@@ -63,6 +65,9 @@ input {
   outline: none;
   border-radius: 10px;
   border: none;
+  font-size: 1.5rem;
+  font-family: "Poppins", serif;
+  font-weight: 500;
 }
 
 .clear {
