@@ -9,38 +9,42 @@ let operator = '';
 
 
 function calc(operat) {
-  
-  operator = operat;
-  
- curValue = [];
- nextValue = result;
 
- console.log(nextValue);
+  operator = operat;
+
+  curValue = [];
+  nextValue = result;
+
+  console.log(nextValue);
 
 }
 
 function operate(number1, number2, operator) {
-  
+
 
   let calculation = 0;
-  
+
   console.log(`${number1} it's numb1`);
   console.log(`${number2} it's numb1`);
   console.log(`${operator} it's oper`);
-if ( operator === '+') { calculation = add(number1, number2)
+  if (operator === '+') {
+    calculation = add(number1, number2)
 
-} else if ( operator === '-') { calculation = subtract(number1, number2)
+  } else if (operator === '-') {
+    calculation = subtract(number1, number2)
 
-} else if ( operator === '*') { calculation = multiply(number1, number2)
+  } else if (operator === '*') {
+    calculation = multiply(number1, number2)
 
-} else if ( operator === '/') { calculation = divide(number1, number2)
+  } else if (operator === '/') {
+    calculation = divide(number1, number2)
 
-}
-display.value = Number(calculation.toFixed(9));
-result = calculation;
+  }
+  display.value = Number(calculation.toFixed(9));
+  result = calculation;
 
-curValue = [];
-operator = '';
+  curValue = [];
+  operator = '';
 
 
 }
@@ -57,36 +61,36 @@ function backSpace() {
 
 }
 
-function showDisplay(numb){
+function showDisplay(numb) {
   result = 0;
- curValue.push(numb);
+  curValue.push(numb);
   result = Number(curValue.join(''))
   display.value = result;
 
 }
 function clearDisplay() {
   display.value = '';
-result = 0;
-curValue = [];
+  result = 0;
+  curValue = [];
 
 }
 
-function add(a,b) {
+function add(a, b) {
   return a + b;
 }
-function subtract(a,b) {
+function subtract(a, b) {
   return a - b;
 }
-function multiply(a,b) {
+function multiply(a, b) {
   return a * b;
 }
-function divide(a,b) {
+function divide(a, b) {
   if (b === 0) {
     display.value = "Error.Don't crush my calc!"
   } else {
-  return a / b;
-  
-}
+    return a / b;
+
+  }
 
 }
 
