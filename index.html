@@ -16,7 +16,8 @@
 
 <body>
   <div class="container">
-    <input id="display" type="text" maxlength="10"; readonly>
+    <input id="display" type="text" maxlength="10" ; readonly>
+    <button id="backspace" onclick="backSpace()">&#9003</button>
     <div class="keys">
       <button onclick="showDisplay(7)">7</button>
       <button onclick="showDisplay(8)">8</button>
@@ -34,7 +35,7 @@
       <button onclick="showDisplay(0)">0</button>
       <button onclick="operate(nextValue, result, operator)">=</button>
       <button onclick="calc('/')">/</button>
-      <button onclick="backSpace()">&#9003</button>
+
     </div>
     <button class="clear" onclick="clearDisplay()">CLEAR</button>
   </div>
